@@ -8,7 +8,7 @@ import FAQ from '../components/FAQ';
 
 const Home = () => {
     return (
-        <main>
+        <main className="min-h-screen bg-white text-[#1e1e1e] font-sans">
             <Hero />
             <OfferCards />
             <ValueAddBanner />

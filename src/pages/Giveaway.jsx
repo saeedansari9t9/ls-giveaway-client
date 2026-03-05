@@ -3,7 +3,7 @@ import EntryForm from '../components/EntryForm';
 
 const Giveaway = () => {
     return (
-        <main style={{ paddingTop: '5rem', minHeight: 'calc(100vh - 200px)' }}>
+        <main className="pt-[7rem] md:pt-[5rem] min-h-[calc(100vh-200px)] bg-[#fdfdfd] text-[#1e1e1e] font-sans">
             <EntryForm />
         </main>
     );

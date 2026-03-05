@@ -8,12 +8,14 @@ import Giveaway from './pages/Giveaway';
 function App() {
   return (
     <Router>
-      <div className="app-container">
+      <div className="flex flex-col min-h-screen">
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/giveaway" element={<Giveaway />} />
-        </Routes>
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/giveaway" element={<Giveaway />} />
+          </Routes>
+        </div>
         <Footer />
       </div>
     </Router>

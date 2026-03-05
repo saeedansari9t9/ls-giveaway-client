@@ -29,15 +29,20 @@ const FAQ = () => {
     ];
 
     return (
-        <section className="section-padding bg-section" id="faq">
-            <div className="container">
-                <h2 className="section-title">Frequently Asked Questions</h2>
+        <section className="py-16 md:py-24 bg-[#fdfdfd]" id="faq">
+            <div className="max-w-[1200px] mx-auto px-6">
+                <div className="text-center mb-14 relative">
+                    <h2 className="text-[1.8rem] md:text-[2.5rem] font-bold text-[#1a1a1a] leading-[1.2]">
+                        Frequently Asked Questions
+                    </h2>
+                    <div className="w-[60px] h-[4px] bg-accent mx-auto mt-4 rounded-full"></div>
+                </div>
 
-                <div className="faq-list">
+                <div className="max-w-3xl mx-auto flex flex-col gap-4">
                     {faqs.map((faq, index) => (
-                        <div className="faq-item" key={index}>
-                            <h4>{faq.q}</h4>
-                            <p>{faq.a}</p>
+                        <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300" key={index}>
+                            <h4 className="text-[1.1rem] md:text-[1.25rem] font-semibold mb-2 text-[#1a1a1a]">{faq.q}</h4>
+                            <p className="text-[#555555] mb-0 text-[0.95rem] md:text-[1rem] leading-[1.6]">{faq.a}</p>
                         </div>
                     ))}
                 </div>
