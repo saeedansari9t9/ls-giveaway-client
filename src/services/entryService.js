@@ -1,6 +1,8 @@
 export const submitEntry = async (payload) => {
     try {
-        const response = await fetch('http://localhost:5000/api/entries', {
+        const API_URL = import.meta.env.VITE_API_URL || 'https://ls-giveaway-server.vercel.app';
+
+        const response = await fetch(`${API_URL}/api/entries`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
