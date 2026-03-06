@@ -80,19 +80,44 @@ const EntryForm = () => {
                 </p>
 
                 {isSuccess ? (
-                    <div className="max-w-xl mx-auto w-full md:bg-white md:p-12 p-6 bg-transparent border-0 md:border md:border-gray-100 rounded-2xl md:shadow-lg text-center">
-                        <svg className="w-[60px] h-[60px] mx-auto text-green-500 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                        <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#1a1a1a]">Entry received! We’ll email you shortly.</h3>
-                        <p className="text-[#555555] mb-6 text-sm md:text-base">Next steps:</p>
+                    <div className="max-w-xl mx-auto w-full md:bg-white md:p-12 p-6 bg-transparent border-2 border-gray-100 rounded-2xl md:shadow-lg text-center">
+                        <div className="relative w-[80px] h-[80px] mx-auto mb-6">
+                            {/* Confetti Elements */}
+                            <div className="absolute top-1/2 left-1/2 w-[6px] h-[6px] bg-[#4285F4] rounded-full animate-confetti-1" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[8px] h-[8px] bg-[#EA4335] rotate-45 animate-confetti-2" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[6px] h-[6px] bg-[#FBBC05] rounded-full animate-confetti-3" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[10px] h-[4px] bg-[#9C27B0] rotate-12 animate-confetti-4" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[6px] h-[6px] bg-[#34A853] rounded-full animate-confetti-5" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[8px] h-[8px] border-[2px] border-[#F88A16] rotate-45 rounded-sm animate-confetti-6" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[5px] h-[5px] bg-[#FF4081] rounded-full animate-confetti-7" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[8px] h-[8px] bg-[#00BCD4] rotate-45 animate-confetti-8" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[10px] h-[4px] bg-[#8BC34A] -rotate-12 animate-confetti-9" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[6px] h-[6px] border-[2px] border-[#FF9800] rounded-sm animate-confetti-10" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[7px] h-[7px] bg-[#3F51B5] rounded-full animate-confetti-11" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[8px] h-[4px] bg-[#E91E63] rotate-45 animate-confetti-12" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[6px] h-[6px] bg-[#FF4081] rounded-full animate-confetti-7" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[10px] h-[10px] bg-[#00BCD4] rotate-45 animate-confetti-8" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[12px] h-[4px] bg-[#8BC34A] -rotate-12 animate-confetti-9" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[8px] h-[8px] border-[2px] border-[#FF9800] rounded-sm animate-confetti-10" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[14px] h-[14px] bg-[#3F51B5] rounded-full animate-confetti-11" style={{ zIndex: 0 }}></div>
+                            <div className="absolute top-1/2 left-1/2 w-[10px] h-[5px] bg-[#E91E63] rotate-45 animate-confetti-12" style={{ zIndex: 0 }}></div>
+
+                            {/* Main Tick */}
+                            <div className="w-full h-full bg-green-100 rounded-full flex items-center justify-center animate-pop relative z-10">
+                                <svg className="w-[40px] h-[40px] text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 className="text-xl md:text-2xl font-bold mb-2 text-[#1a1a1a]">Thanks for participating!</h3>
+                        <p className="text-[#555555] mb-6 text-sm md:text-base font-medium">Entry received! We’ll email you shortly.</p>
                         <div className="flex flex-col gap-4 justify-center">
                             <a href="https://www.instagram.com/lexorasolution" target="_blank" rel="noopener noreferrer" className="bg-transparent text-accent px-6 py-3 rounded-[4px] md:rounded-full font-semibold border-2 border-accent hover:bg-accent hover:text-white transition-all duration-300 text-sm md:text-base">Follow Lexora on Instagram</a>
-                            <a href="#" className="bg-accent text-white px-6 py-3 rounded-[4px] md:rounded-full font-semibold border-2 border-accent hover:bg-[#E07300] hover:border-[#E07300] transition-all duration-300 text-sm md:text-base">Book a 15-min call (optional)</a>
+                            <a href="https://wa.me/923173083329?text=Hi%20Lexora%20Team,%20I'd%20like%20to%20book%20a%2015-minute%20call%20regarding%20the%20giveaway!" target="_blank" rel="noopener noreferrer" className="bg-accent text-white px-6 py-3 rounded-[4px] md:rounded-full font-semibold border-2 border-accent hover:bg-[#E07300] hover:border-[#E07300] transition-all duration-300 text-sm md:text-base">Book a 15-min call (optional)</a>
                         </div>
                     </div>
                 ) : (
-                    <form className="max-w-xl mx-auto w-full md:bg-white md:p-10 md:rounded-2xl md:shadow-lg md:border md:border-gray-100 bg-transparent py-2 border-none shadow-none" onSubmit={handleSubmit}>
+                    <form className="max-w-xl mx-auto w-full md:bg-white md:p-10 p-6 md:rounded-2xl rounded-xl md:shadow-lg shadow-md border md:border-gray-100 border-gray-200 bg-white md:py-10 py-8" onSubmit={handleSubmit}>
                         <div className="mb-[0.8rem] md:mb-5 w-full">
                             <label className="block text-[0.75rem] md:text-[0.95rem] font-semibold text-[#444] md:text-[#1a1a1a] mb-[0.2rem] md:mb-2" htmlFor="name">Full Name</label>
                             <input
@@ -160,7 +185,7 @@ const EntryForm = () => {
 
                         <button
                             type="submit"
-                            className="bg-accent text-white px-[2rem] md:px-8 py-[0.6rem] md:py-3.5 rounded-[4px] md:rounded-full font-semibold uppercase text-[0.75rem] md:text-[0.9rem] tracking-[0.5px] border-2 border-accent hover:bg-[#E07300] hover:border-[#E07300] transition-all duration-300 flex items-center justify-center disabled:opacity-70 md:w-full"
+                            className="bg-accent text-white px-[2rem] md:px-8 py-[0.6rem] md:py-3.5 rounded-[4px] font-semibold uppercase text-[0.75rem] md:text-[0.9rem] tracking-[0.5px] border-2 border-accent hover:bg-[#E07300] hover:border-[#E07300] transition-all duration-300 flex items-center justify-center disabled:opacity-70 w-full"
                             disabled={isSubmitting}
                         >
                             {isSubmitting ? 'Submitting...' : 'Submit Entry'}

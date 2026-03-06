@@ -19,6 +19,7 @@ const Header = () => {
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex gap-8 items-center">
+                    <a href="/#" className="font-medium text-[#e5e7eb] text-[0.95rem] hover:text-accent transition-colors">Home</a>
                     <a href="/#offer" className="font-medium text-[#e5e7eb] text-[0.95rem] hover:text-accent transition-colors">Offer</a>
                     <a href="/#how-it-works" className="font-medium text-[#e5e7eb] text-[0.95rem] hover:text-accent transition-colors">How It Works</a>
                     <a href="/#why-lexora" className="font-medium text-[#e5e7eb] text-[0.95rem] hover:text-accent transition-colors">Why Lexora</a>
@@ -48,6 +49,7 @@ const Header = () => {
                     onClick={(e) => e.stopPropagation()}
                 >
                     <div className="flex flex-col gap-3 items-start p-[18px]">
+                        <a href="/#" onClick={closeMenu} className="w-full text-[#e5e7eb] font-semibold text-[0.98rem] p-2 rounded-xl hover:text-accent hover:bg-white/5 transition-colors">Home</a>
                         <a href="/#offer" onClick={closeMenu} className="w-full text-[#e5e7eb] font-semibold text-[0.98rem] p-2 rounded-xl hover:text-accent hover:bg-white/5 transition-colors">Offer</a>
                         <a href="/#how-it-works" onClick={closeMenu} className="w-full text-[#e5e7eb] font-semibold text-[0.98rem] p-2 rounded-xl hover:text-accent hover:bg-white/5 transition-colors">How It Works</a>
                         <a href="/#why-lexora" onClick={closeMenu} className="w-full text-[#e5e7eb] font-semibold text-[0.98rem] p-2 rounded-xl hover:text-accent hover:bg-white/5 transition-colors">Why Lexora</a>
