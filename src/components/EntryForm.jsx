@@ -124,7 +124,7 @@ const EntryForm = () => {
                                 type="text"
                                 id="name"
                                 name="name"
-                                className="w-full h-[38px] md:h-12 px-[0.6rem] md:px-4 py-[0.4rem] md:py-3 bg-[#f1f2f4] md:bg-white text-[0.75rem] md:text-[1rem] border border-transparent md:border-gray-300 rounded-[4px] md:rounded-lg focus:outline-none focus:border-accent focus:bg-white transition-colors placeholder:text-[#888] placeholder:text-[0.75rem] md:placeholder:text-[0.95rem]"
+                                className="w-full h-[38px] md:h-12 px-[0.6rem] md:px-4 py-[0.4rem] md:py-3 bg-[#f1f2f4] md:bg-white text-[16px] md:text-[1rem] border border-transparent md:border-gray-300 rounded-[4px] md:rounded-lg focus:outline-none focus:border-accent focus:bg-white transition-colors placeholder:text-[#888] placeholder:text-[16px] md:placeholder:text-[0.95rem]"
                                 value={formData.name}
                                 onChange={handleChange}
                             />
@@ -137,7 +137,7 @@ const EntryForm = () => {
                                 type="text"
                                 id="company"
                                 name="company"
-                                className="w-full h-[38px] md:h-12 px-[0.6rem] md:px-4 py-[0.4rem] md:py-3 bg-[#f1f2f4] md:bg-white text-[0.75rem] md:text-[1rem] border border-transparent md:border-gray-300 rounded-[4px] md:rounded-lg focus:outline-none focus:border-accent focus:bg-white transition-colors placeholder:text-[#888] placeholder:text-[0.75rem] md:placeholder:text-[0.95rem]"
+                                className="w-full h-[38px] md:h-12 px-[0.6rem] md:px-4 py-[0.4rem] md:py-3 bg-[#f1f2f4] md:bg-white text-[16px] md:text-[1rem] border border-transparent md:border-gray-300 rounded-[4px] md:rounded-lg focus:outline-none focus:border-accent focus:bg-white transition-colors placeholder:text-[#888] placeholder:text-[16px] md:placeholder:text-[0.95rem]"
                                 value={formData.company}
                                 onChange={handleChange}
                             />
@@ -150,7 +150,7 @@ const EntryForm = () => {
                                 type="email"
                                 id="email"
                                 name="email"
-                                className="w-full h-[38px] md:h-12 px-[0.6rem] md:px-4 py-[0.4rem] md:py-3 bg-[#f1f2f4] md:bg-white text-[0.75rem] md:text-[1rem] border border-transparent md:border-gray-300 rounded-[4px] md:rounded-lg focus:outline-none focus:border-accent focus:bg-white transition-colors placeholder:text-[#888] placeholder:text-[0.75rem] md:placeholder:text-[0.95rem]"
+                                className="w-full h-[38px] md:h-12 px-[0.6rem] md:px-4 py-[0.4rem] md:py-3 bg-[#f1f2f4] md:bg-white text-[16px] md:text-[1rem] border border-transparent md:border-gray-300 rounded-[4px] md:rounded-lg focus:outline-none focus:border-accent focus:bg-white transition-colors placeholder:text-[#888] placeholder:text-[16px] md:placeholder:text-[0.95rem]"
                                 value={formData.email}
                                 onChange={handleChange}
                             />
@@ -162,7 +162,7 @@ const EntryForm = () => {
                             <textarea
                                 id="bottleneck"
                                 name="bottleneck"
-                                className="w-full min-h-[70px] md:min-h-[120px] px-[0.6rem] md:px-4 py-[0.4rem] md:py-3 bg-[#f1f2f4] md:bg-white text-[0.75rem] md:text-[1rem] border border-transparent md:border-gray-300 rounded-[4px] md:rounded-lg focus:outline-none focus:border-accent focus:bg-white transition-colors placeholder:text-[#888] placeholder:text-[0.75rem] md:placeholder:text-[0.95rem] resize-y"
+                                className="w-full min-h-[70px] md:min-h-[120px] px-[0.6rem] md:px-4 py-[0.4rem] md:py-3 bg-[#f1f2f4] md:bg-white text-[16px] md:text-[1rem] border border-transparent md:border-gray-300 rounded-[4px] md:rounded-lg focus:outline-none focus:border-accent focus:bg-white transition-colors placeholder:text-[#888] placeholder:text-[16px] md:placeholder:text-[0.95rem] resize-y"
                                 placeholder="What digital challenge takes up most of your time?"
                                 value={formData.bottleneck}
                                 onChange={handleChange}
